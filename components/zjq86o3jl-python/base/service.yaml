@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: zjq86o3jl-python
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: zjq86o3jl-python 
+  name: zjq86o3jl-python
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: zjq86o3jl-python 
